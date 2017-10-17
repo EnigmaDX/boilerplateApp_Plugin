@@ -4,13 +4,13 @@
 
   var initApp = function() {
     if ((device_ready && jqm_mobile_init) || (jqm_mobile_init && !mobile_system)) {
-      startApp();
+      // startApp() ;
     }
   };
 
   var onDeviceReady = function() {
     device_ready = true;
-    //alert('dev ready');
+    // alert('dev ready');
     initApp();
   };
 

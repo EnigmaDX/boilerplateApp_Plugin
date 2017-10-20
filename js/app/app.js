@@ -55,6 +55,7 @@
         {
             marker = new google.maps.Marker({
             position: currentLocation,
+            animation: google.maps.Animation.DROP,
             map: map
           });
 
@@ -67,6 +68,7 @@
         $('#btnHidePos').on('click', function()
             {
                 marker.setMap(null);
+                marker = null;
                 map.setZoom(8);
             });
         

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <title>phonegap & jquery mobile boilerplate</title>
   
@@ -24,41 +24,46 @@
   </script>
   
   
-  </head>
-  <body>
-    
-    <div data-role="page">
+</head>
+<body>
 
-    	<div data-role="header">
-        <h1>WHERE AM I?</h1>
-      </div><!-- /header -->
+  <div data-role="page">
 
-      <div id="content-body">
+   <div data-role="header">
+    <h1>WHERE AM I?</h1>
+  </div><!-- /header -->
 
-        <div id="map-content">
-              <div id="map"></div>
+  <div id="content-body">
 
-            <p id="geolocation"></p>
-            </div>
+    <div id="map-content">
+      <!-- map will be displayed here -->
+      <div id="map"></div>
 
-            <button id="btnShowPos" onclick="showPos()">FIND ME</button>
-            <button id="btnHidePos">HIDE ME</button>
-      </div>
+      <p id="geolocation"></p>
+    </div>
 
-    	<div data-role="footer">
-    		<h4>Mobile App With GoogleMaps API</h4>
-    	</div><!-- /footer -->
+    <button id="btnShowPos">FIND ME</button>
+    <button id="btnHidePos">HIDE ME</button>
 
-    </div><!-- /page -->
+    <div data-role="footer">
+      <h4>Mobile App With GoogleMaps API</h4>
+    </div>
+
+  </div> <!--/content-body-->
+
+
+
+
+</div><!-- /page -->
 <script src="js/lib/jquery.js"></script>
-  <!-- your scripts here -->
-  <script src="js/custom.js"></script>
-  <script src="js/app/app.js"></script>
-  <script src="js/app/bootstrap.js"></script>
-  <script src="js/lib/jquery.mobile.js"></script>
+<!-- your scripts here -->
+<script src="js/custom.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/bootstrap.js"></script>
+<script src="js/lib/jquery.mobile.js"></script>
 
 <!--Google maps API-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ9fa-C7BbSeOfrA9LybPkLsP5Dtyn118&callback=initMap">
-    </script>
-  </body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ9fa-C7BbSeOfrA9LybPkLsP5Dtyn118&callback=initMap">
+</script>
+</body>
 </html>

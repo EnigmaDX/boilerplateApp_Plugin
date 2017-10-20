@@ -21,6 +21,7 @@
       var marker;
       function onSuccess(position) {
         
+        //get current longitude and latitude
         currentLocation = {lat:  position.coords.latitude, lng: position.coords.longitude};
           map = new google.maps.Map(document.getElementById('map'), {
           zoom: 8,
@@ -48,6 +49,8 @@
         
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
         
+
+        //show location with marker when btn is clicked
         $('#btnShowPos').on('click', function()
         {
             marker = new google.maps.Marker({
@@ -59,6 +62,8 @@
           map.setCenter(marker.getPosition());
         });
 
+
+        //clear marker from map
         $('#btnHidePos').on('click', function()
             {
                 marker.setMap(null);

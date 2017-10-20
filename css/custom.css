@@ -1,19 +1,8 @@
-
-.headd
-{
-	background: #000046;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-#test
-{
-	background: #000046;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
+ html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
 h1
 {
@@ -23,22 +12,21 @@ h1
 
 #map
 {
-	height: 500px;
-	width: 100%;
-	border: 2px solid blue;
-	/*visibility: hidden;*/
+	height: 495px;
+	width: 98%;
+	border-radius: 16px;
 }
 
 #map-content {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 6px;
 }
 
 #content-body
 {
-	background: #000046;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+	background: #000046;
+	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
 	background: linear-gradient(to right, #1CB5E0, #000046);
 }

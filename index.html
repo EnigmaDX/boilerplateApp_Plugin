@@ -30,17 +30,20 @@
     <div data-role="page">
 
     	<div data-role="header">
-    		<h1>Single page</h1>
-    	</div><!-- /header -->
+        <h1>WHERE AM I?</h1>
+      </div><!-- /header -->
 
-    	<div data-role="content">
+      <div id="content-body">
 
-        <button id="btnPosition">DISPLAY CURRENT LOCATION</button>
-
-            <div id="map"></div>
+        <div id="map-content">
+              <div id="map"></div>
 
             <p id="geolocation"></p>
-    	</div><!-- /content -->
+            </div>
+
+            <button id="btnShowPos" onclick="showPos()">FIND ME</button>
+            <button id="btnHidePos">HIDE ME</button>
+      </div>
 
     	<div data-role="footer">
     		<h4>Mobile App With GoogleMaps API</h4>
